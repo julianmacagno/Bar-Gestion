@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<link href="index.css" rel="stylesheet" type="text/css">
@@ -24,7 +24,7 @@
 
 		<!-- este formulario es la hora-->
 		<form>
-			<div id="hora"> <input TYPE="text" NAME="disp" VALUE="" SIZE="18"> </div>
+			<span id="hora"> <input TYPE="text" NAME="disp" VALUE="" SIZE="18"> </span>
 		</form>
 
 		<!-- Este es el boton desplegable. -->
