@@ -1,218 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
-*{
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans";
-}
-
-body .content .boton1, .boton2{
-	text-decoration: none;
-	color: #F2102E;
-	text-align: center;
-	display: block;
-	float: left;
-	padding: 20px 30px;
-	background: black;
-	margin-right:50px; 
-	margin-left:;
-	margin-top: 25px;
-	margin-bottom: ;
-}
-
-.boton1, .boton2{
-	border-radius: 15px;
-	height: 70px;
-	width: 125px;
-	font-size: 25px;
-	border: 1px solid #302E2F;
-}
-
-body .content .boton1:hover{
-	background: #353232 ;
-}
-body .content .boton2:hover{
-	background: #353232;
-}
-
-
-body h1{
-	float: left;
-	margin: 60px 250px 60px 15px;
-}
-
-
-body{
-	font-family: 'Open Sans';
-	background: #42414A;
-}
-
-.content, footer, table, head, nav{
-	
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
-}
-
-nav{
-	background: #211C85;
-	overflow: hidden;
-	border: 1px solid #1F1E21;
-}
-
-nav ul{
-	list-style: none;
-}
-
-nav ul li{
-	float: left;
-}
-
-nav ul li a{
-	padding:10px 20px;
-	display: block;
-	color: #fff;
-	text-decoration: none;
-}
-
-nav .nav-comun{
-	background: #858590;
-}
-
-nav .nav-especial a:hover{
-	background: #75ACEC
-}
-
-.content, table{
-	width: 70%;
-	background: #D9335C;
-	float:centre;
-}
-
-.content{
-	border: 3px solid #302E2F;
-	border-radius: 5px;
-}
-
-table{
-	width: 100%;
-	float: centre;
-	border: 2px solid #000;
-	border-collapse: collapse;
-	background: #A09FAB;
-
-}
-
-table td{
-	border: 2px solid #000;
-}
-
-table .tabla:hover{
-	background: #ccc;
-	color: #252F9A;
-	font-weight: bold;
-}
-
-table .tabla .c1, .c2, .c3, .c4{
-	text-align: center;
-	font-size: 20pt;
-}
-
-table .titulos-tabla{
-	text-align: center;
-	font-weight: bold;
-	font-size: 23pt;
-	background: #47447E;
-
-}
-
-.aux{
-	float: centre;
-	text-align: center;
-	display: block;
-	background: red;
-	font-weight: bold;
-
-}
-
-
-footer{
-	background: #000;
-	color: #fff;
-	clear: both;
-	padding: 10px 0px;
-	text-align: center;
-	border-radius: 3px;
-	margin-top:25px;
-}
-
-footer p2{
-	margin-right: 20px;
-	margin-left: 20px;
-}
-
-
-
-
-
-/*
 body{
 	font-family: 'Open Sans';
 	padding: 0;
 	margin: 0;
-	/*background-color:#0CC;
-	background: url(textura.jpg);
-}
-
-table {
-	border: 1px solid #000;
-	border-collapse: collapse;
-
-}
-nav form {
-	display: inline-block;
-	background: green;
-}
-
-table td {
-	border: 1px solid #000;
-	padding: 10px;	
-}
-table tr:hover{
-	background: #CAC8C8;
-}
-
-/*.content .tabla {
-
-	display: inline-block;
-	position: relative;
-	top:100px;
-	bottom:0;
-	right: 500px;
-	left: 0;
-	background-color: ;
-	border: 5px solid black;
-	width: 300px;
-}
-
-.content .tabla .c1{
-	display: inline-block;
-	background-color: blue;
-	margin: 50px 100px 50px 100px;
-	font-size: 50px;
-}
-
-.content .tabla .c2{
-	display: inline-block;
-	background-color: orange;
-	margin: 10px 100px 10px 100px;
-	font-size: 25px;
-}
-
-.content h1{
-		
-	color: red;
-	margin-left: 100px;
+	background-color:#0CC; 
 }
 
 nav{
@@ -224,17 +16,14 @@ nav{
 	float: top;
 }
 
-.content .titulos-tabla{
-	background-color: black;
-	color: white;
-	border: 5px solid green;
-
+.content{
+	margin-left: 40px;
 }
 
 /*footer{
 	width: 100%;
 	text-align: right;
-}
+}*/
 
 #info1, #info2{
 	font-weight: bold;
@@ -245,34 +34,12 @@ nav{
 	margin-left: 30px;
 	font-size: 25px;
 }
-form div  {
-	background: red;
-}
-
-footer{
-	/*width: 50%;
-	background: rgba(0,0,0, .7);
-	margin: 200px 300px;
-	padding-left: 30px;
-	border: 5px solid #7F7E7E;
-}
-
-footer p {
-	color: rgba(255,0,0,.5);
-	margin: 0px;
-
-	
-}
-footer p1{
-	color: green;
-	margin:10px;
-}
 
 
 /** {
 	margin:0px;
 	padding:0px;
-}
+}*/
 
 #header {
 	padding-right: 10px;
@@ -285,7 +52,7 @@ ul, ol {
 
 /*.nav > li {
 	float:left;
-}
+}*/
 
 .nav li a {
 	background-color:#000;
@@ -302,7 +69,7 @@ ul, ol {
 .nav li ul {
 	display:none;
 	/*position:absolute;*/
-	/*min-width:140px;
+	/*min-width:140px;*/
 }
 
 .nav li:hover > ul {
@@ -312,4 +79,3 @@ ul, ol {
 footer {
 	width: 100%;
 }
-*/
