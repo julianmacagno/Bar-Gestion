@@ -73,11 +73,21 @@
 					//con sus respectivos datos
 					while ($row = $rs->fetch_array(MYSQLI_ASSOC))
 					{
+						if($row["mesas_disponible"]==1)
+						{
+							$disp = "Si";
+						}
+
+						else
+						{
+							$disp = "No";
+						}
+
 						echo 
 						"<tr class='tabla'> 
 							<td class='c1'>".$row["mesas_id"]."</td>
 							<td class='c2'>".$row["mesas_numero"]."</td>
-							<td class='c3'>".$row["mesas_disponible"]."</td>
+							<td class='c3'>".$disp."</td>
 							<td class='c4'>".$row["mesas_id_mozo"]."</td>
 						<tr>";
 					}
