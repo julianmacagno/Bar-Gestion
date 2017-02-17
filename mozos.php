@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="mesas.css" rel="stylesheet" type="text/css">
-	<title>Administrar mesas</title>
+	<title>Administrar mozos</title>
 </head>
 <body>
 
@@ -11,8 +11,8 @@
 
 		include "connect.php";
 
-		//Seleccionamos toda la tabla de mesas
-		$sql = "SELECT * FROM `mesas`";
+		//Seleccionamos toda la tabla de mozos
+		$sql = "SELECT * FROM `mozos`";
 		$rs = $bdmotor->query($sql);
 
 		if($cant=mysqli_num_rows($rs))
@@ -20,20 +20,20 @@
 			//y la mostramos entera
 			echo "<table>
 				<tr> 
-		 			<td> Id de mesa </td>
-		 		 	<td> Numero de mesa </td>
+		 			<td> Id del mozo </td>
+		 		 	<td> Nombre del mozo </td>
 		 		 	<td>  </td>
 		 		<tr>";
 							
 			while ($row = $rs->fetch_array(MYSQLI_ASSOC))
 		 	{
 		 		$elim = -1;
-		 		//con opciones para eliminar mesas
+		 		//con opciones para eliminar menus
 		 		echo 
 		 		"<tr> 
-		 			<td>".$row["mesas_id"]."</td>
-		 		 	<td>".$row["mesas_numero"]."</td>
-		 		 	<td><a href=\"admin_mesas.php?id=".$row["mesas_id"]."\"> Eliminar </a></td>
+		 			<td>".$row["mozos_id"]."</td>
+		 		 	<td>".$row["mozos_nombre"]."</td>
+		 		 	<td><a href=\"admin_mozos.php?id=".$row["mozos_id"]."\"> Eliminar </a></td>
 		 		<tr>";
 		 	}
 
@@ -45,8 +45,8 @@
 			echo "La base de datos esta vacia.";
 		}
 
-		//o agregar nuevas
-	 	echo "<p></p> <a href=\"admin_mesas.php?id=".$elim."\"> Agregar nueva mesa </a>
+		//o agregar nuevos
+	 	echo "<p></p> <a href=\"admin_mozos.php?id=".$elim."\"> Agregar nuevo mozo </a>
 	 		  <p></p> <a href=\"index.php?\"> Volver al menu </a>";
 	?>
 

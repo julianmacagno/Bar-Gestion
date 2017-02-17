@@ -5,6 +5,8 @@
 	<link href="abrir.css" rel="stylesheet" type="text/css">
 	<title>Abrir mesa</title>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
 	<script type="text/javascript">
 			
 			//modifica el value del input "costo" con los valores de los menus seleccionados
@@ -32,10 +34,21 @@
 				document.getElementById("costo").value = total;
 
 				// alert("Opción seleccionada: " + textoSeleccionado + "\n Valor de la opción: " + valorSeleccionado + "\n Valor del costo: " + costo.value);
+			
+				//POR ULTIMO HACEMOS EL ENVIO DEL TOTAL PARA GENERAR LA COMANDA
+
+				//var costo = document.getElementById("menu");
+
+				// $.ajax({
+				// 	type:'post',
+				// 	url:'sumar.php',
+				// 	data:menuSeleccionado,
+				// 	success:function(resp){
+				// 		$(#respa).html(resp);
+				// 	}
+				// });
 			}
-
 	</script>
-
 </head>
 
 <body>
@@ -89,10 +102,11 @@
 		</select>
 
 		<!-- Botones de sumar, campo con el costo y el submit del formulario -->
-		<button type="button" name="sumar" onclick="actualizar()"> Sumar </button>
+		<button type="button" id="sumar" name="sumar" onclick="actualizar()"> Sumar </button>
 		<input type="number" id="costo" name="Costo" value="0">
 		<input type="submit" name="comanda" value="Nueva Comanda">
 
 	</form>
+
 </body>
 </html>
