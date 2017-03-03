@@ -28,7 +28,6 @@
 							
 			while ($row = $rs->fetch_array(MYSQLI_ASSOC))
 		 	{
-		 		$elim = -1;
 		 		//con opciones para eliminar menus
 		 		echo 
 		 		"<tr> 
@@ -48,8 +47,9 @@
 		}
 
 		//o agregar nuevos
-	 	echo "<p></p> <a href=\"admin_menus.php?id=".$elim."\"> Agregar nuevo menu </a>
-	 		  <p></p> <a href=\"index.php?\"> Volver al menu </a>";
+		$agregar = -1;
+		echo "<p></p> <a href=\"admin_menus.php?id=".$agregar."\"> Agregar nuevo menu </a>
+	 	<p></p> <a href=\"index.php?\"> Volver al menu </a>";
 	?>
 
 </body>

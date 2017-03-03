@@ -29,12 +29,18 @@
 			{
 				die("Error de SQL consulta 1: ".$bdmotor->connect_errno);
 			}
-			
-			else
+
+			$sql = "UPDATE `mesas`
+					SET `mesas_id_mozo` = '$mozo'
+					WHERE `mesas`.`mesas_id` = $mesa";
+
+			$rs = $bdmotor->query($sql);
+
+			if(!$rs)
 			{
-				echo "Su consulta 1 ha sido realizada con exito.";
-			}	
-			
+				die("Error de SQL consulta 2: ".$bdmotor->connect_errno);
+			}
+
 			$sql = "INSERT INTO `comandas` 
 			(
 				`comandas_id`,
@@ -54,12 +60,7 @@
 
 			if(!$rs)
 			{
-				die("Error de SQL consulta 2: ".$bdmotor->connect_errno);
-			}
-			
-			else
-			{
-				echo "Su consulta 2 ha sido realizada con exito.";
+				die("Error de SQL consulta 3: ".$bdmotor->connect_errno);
 			}
 
 			echo "<a href=\"index.php?\"> Volver al menu </a>";

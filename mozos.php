@@ -27,7 +27,6 @@
 							
 			while ($row = $rs->fetch_array(MYSQLI_ASSOC))
 		 	{
-		 		$elim = -1;
 		 		//con opciones para eliminar menus
 		 		echo 
 		 		"<tr> 
@@ -45,8 +44,9 @@
 			echo "La base de datos esta vacia.";
 		}
 
+		$agregar = -1;
 		//o agregar nuevos
-	 	echo "<p></p> <a href=\"admin_mozos.php?id=".$elim."\"> Agregar nuevo mozo </a>
+	 	echo "<p></p> <a href=\"admin_mozos.php?id=".$agregar."\"> Agregar nuevo mozo </a>
 	 		  <p></p> <a href=\"index.php?\"> Volver al menu </a>";
 	?>
 

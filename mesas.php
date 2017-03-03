@@ -7,6 +7,8 @@
 </head>
 <body>
 
+	<h1 style="margin-bottom:30px;">Listado de mesas</h1>
+
 	<?php 
 
 		include "connect.php";
@@ -22,18 +24,14 @@
 				<tr> 
 		 			<td> Id de mesa </td>
 		 		 	<td> Numero de mesa </td>
-		 		 	<td>  </td>
 		 		<tr>";
 							
 			while ($row = $rs->fetch_array(MYSQLI_ASSOC))
 		 	{
-		 		$elim = -1;
-		 		//con opciones para eliminar mesas
 		 		echo 
 		 		"<tr> 
 		 			<td>".$row["mesas_id"]."</td>
 		 		 	<td>".$row["mesas_numero"]."</td>
-		 		 	<td><a href=\"admin_mesas.php?id=".$row["mesas_id"]."\"> Eliminar </a></td>
 		 		<tr>";
 		 	}
 
@@ -45,9 +43,15 @@
 			echo "La base de datos esta vacia.";
 		}
 
-		//o agregar nuevas
-	 	echo "<p></p> <a href=\"admin_mesas.php?id=".$elim."\"> Agregar nueva mesa </a>
-	 		  <p></p> <a href=\"index.php?\"> Volver al menu </a>";
+		$var1 = -1;
+		$var2 = -2;
+		//y agregamos opciones para agregar o eliminar mesas
+	 	echo "<a href=\"admin_mesas.php?id=".$var1."\"> Agregar nueva mesa </a>
+		 	  <a href=\"admin_mesas.php?id=".$var2."\"> Eliminar una mesa </a>
+	 		  <a href=\"index.php?\"> Volver al menu </a>";
+	 		  
+
+		//COLOCAR ESTOR 3 LINKS AL COSTADO DE LA TABLA. TRABAJAR CON CSS
 	?>
 
 </body>
