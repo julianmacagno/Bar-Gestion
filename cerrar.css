@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+body{
+	
+	background: #D9335C;
+	float:centre;
+	
+	
+}

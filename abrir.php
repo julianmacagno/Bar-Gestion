@@ -21,22 +21,19 @@
 				 
 				// Obtener el valor y el texto de la opción seleccionada
 				var valorSeleccionado = opcionSeleccionada.value;
-
 				//convertimos a int las variables
 				var menuSeleccionado = parseInt(valorSeleccionado);
 				var total = parseInt(document.getElementById("costo").value);
-
 				total+=menuSeleccionado;
-
 				//modificamos el value del campo costo
 				document.getElementById("costo").value = total;
-
 				// alert("Opción seleccionada: " + textoSeleccionado + "\n Valor de la opción: " + valorSeleccionado + "\n Valor del costo: " + costo.value);
 			}
 	</script>
 </head>
 
 <body>
+	<h1>Abrir Mesa</h1>
 	<!-- Formulario a cargar -->
 	<form method="post" name="formulario" action="comanda.php">
 		
@@ -46,7 +43,7 @@
 		
 		<?php 		
 			include 'connect.php';
-			$sql = "SELECT * FROM `mesas` WHERE `mesas_disponible` = 1";;
+			$sql = "SELECT * FROM `mesas` WHERE `mesas_disponible` = 1";
 			$rs = $bdmotor->query($sql);
 			while ($row=$rs->fetch_row())
 			{
@@ -92,6 +89,6 @@
 		<input type="submit" name="comanda" value="Nueva Comanda">
 	</form>
 
-		<a href=\"index.php?\"> Volver al menu </a>
+		<a class= "volver" href=\"index.php?\"> Volver al menu </a>
 </body>
 </html>

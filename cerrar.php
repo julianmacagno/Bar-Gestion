@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="cerrar.css" rel="stylesheet" type="text/css">
-	<title>Abrir mesa</title>
+	<link href="cerrarr.css" rel="stylesheet" type="text/css">
+	<title>Cerrar mesas</title>
 </head>
 <body>
+	<h1>Cerrar Mesas</h1>
 
 	<!-- Formulario a cargar -->
 	<form method="post" name="formulario" action="baja.php">
 		
 		<!-- Lista de mesas -->
-		<select name="Mesa" id="mesa">
+		<select name="Mesa" id="mesa" class="oElegir">
 			<option value="-1">Elija una mesa</option>
 		
 			<?php 		
@@ -25,7 +26,7 @@
 			?>
 		</select>
 
-		<input type="submit" name="cerrar" value="Cerrar Mesa">
+		<input type="submit" name="cerrar" value="Cerrar Mesa" class="bCerrar">
 
 	</form>
 

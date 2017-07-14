@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+body h1{
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 17pt;
+	font-weight: bold;
+	padding: 7px;
+	background: #47447E;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 2%;
+	border: 2px solid #000;
+
+}
+
+table{
+	width: 50%;
+	float: centre;
+	border: 2px solid #000;
+	border-collapse: collapse;
+	background: #A09FAB;
+	margin-left: 25%;
+	margin-top: 5%;
+
+}
+
+table td{
+	border: 2px solid #000;
+}
+
+table .titulos-tabla{
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	background: #47447E;
+
+}
+
+table .tabla .c1, .c2, .c3, .c4{
+	text-align: center;
+	font-size: 15pt;
+}
+
+.bEliminar{
+	display: block;
+	text-decoration: none;
+	color: #211C85;
+	text-align: center;
+	font-size: 15pt;
+	font-weight: bold;	
+}
+
+.bEliminar:hover{
+	color: #4B4BE4;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.bAgregar{
+	display: block;
+	text-decoration: none;
+	color: #211C85;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 7px;
+	background: black;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 1%;
+
+}
+
+.bVolver{
+	display: block;
+	text-decoration: none;
+	color: #211C85;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 7px;
+	background: black;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 1%;
+
+
+}
+
+body{
+	
+	background: #D9335C;
+	float:centre;
+	
+	
+}
+

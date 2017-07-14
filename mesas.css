@@ -1,6 +1,31 @@
-table, tr, td
-{
-	border: 1px solid black;
-	margin: 15px;
-	padding: 5px;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+	background: black;
+}
+
+body table{
+	width: 50%;
+	float: centre;
+	border: 2px solid #000;
+	border-collapse: collapse;
+	background: #A09FAB;
+	margin-left: 25%;
+	margin-top: 10%;
+
+}
+
+table td{
+	border: 2px solid #000;
+}
+
+table .titulos-tabla{
+	text-align: center;
+	font-weight: bold;
+	font-size: 23pt;
+	background: #47447E;
+
 }

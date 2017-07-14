@@ -8,7 +8,6 @@
     </head>
     <body>
         <?php
-
             $id = $_GET["id"];
             
             if($id==-1)
@@ -20,7 +19,6 @@
                             <input type=\"submit\" value=\"Agregar\">
                     </form>";
             }
-
             else
             {   
                 include 'connect.php';
@@ -32,7 +30,6 @@
                 {
                     die("Error de SQL: ".$bdmotor->connect_errno);
                 }
-
                 else 
                 {
                     echo "<a href=\"index.php?\"> Volver al menu </a>";

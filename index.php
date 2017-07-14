@@ -77,12 +77,10 @@
 						{
 							$disp = "Si";
 						}
-
 						else
 						{
 							$disp = "No";
 						}
-
 						echo 
 						"<tr class='tabla'> 
 							<td class='c1'>".$row["mesas_id"]."</td>
@@ -103,8 +101,8 @@
 	</div>			
 
 	<footer>	
-		<p id="alumnos">Julian Macagno - Lucas Lo Preiato </p>
-		<p id="separador"> || </p>
+		<p id="alumnos" class="nombres">Julian Macagno - Lucas Lo Preiato </p>
+		<p id="separador">~</p>
 		<p id="universidad">Universidad Blas Pascal </p>
 	</footer>
 </body>
