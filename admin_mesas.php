@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="" rel="stylesheet">
     </head>
+    
     <body>
 
         <?php
@@ -19,10 +20,16 @@
             }	
             $row = $ultima_mesa->fetch_row();
             $ultima_mesa = $row[0];
+
+            $mensaje = "";
+            //se elige eliminar una mesa. se arma la consulta correspondiente
             if($id==-2)
             {
                 $sql = "DELETE FROM `mesas` WHERE `mesas`.`mesas_id` = $ultima_mesa";
+                $mensaje = "Se ha eliminado una mesa con exito!";
             }        
+
+            //se elige agregar una nueva mesa
             else
             {
                 $ultima_mesa = $ultima_mesa + 1;
@@ -40,15 +47,21 @@
                     '1', 
                     '0'
                 )";
+
+                $mensaje = "Se ha agregado una mesa con exito!";
             }
+
             $rs = $bdmotor->query($sql);
+            
             if(!$rs)
             {
                 die("Error de SQL consulta: ".$bdmotor->connect_errno);
             }
+
+            echo $mensaje;            
         ?>
 
-        <a href='index.php?'> Volver al menu </a>";
+        <a href='index.php?'> Volver al menu </a>
 
     </body>
 </html>

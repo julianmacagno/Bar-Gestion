@@ -8,9 +8,7 @@
     </head>
     <body>
         <?php
-
             include 'connect.php';
-
             $nombre=$_POST["Nombre"];
             $precio=$_POST["Precio"];
             
@@ -27,18 +25,18 @@
                 '$nombre', 
                 '$precio'
             )";
-
             $bdmotor->query($sql);
             
             if($bdmotor->connect_errno)
             {
                 die("Error de SQL: ".$bdmotor->connect_errno);
             }
+
             else 
             {
-                echo "<a href=\"index.php?\"> Volver al menu </a>";
+                echo "Se ha agregado el menu con exito!";    
             }
-
         ?>
+        <a href="index.php?"> Volver al menu </a>
     </body>
 </html>

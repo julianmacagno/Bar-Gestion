@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+body h1{
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 17pt;
+	font-weight: bold;
+	padding: 7px;
+	background: #47447E;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 2%;
+	border: 2px solid #000;
+
+}
+body{
+	background: #D9335C;
+	float:centre;	
+}
+
+form{
+	width: 40%;
+	border: 2px solid #302E2F;
+	margin-left: 29%;
+	margin-top: 2%;
+	padding: 20px;
+	background-color:#47447E;
+}
+
+.titulo{
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 7px;
+	background: black;
+	width: 45%;
+	margin-left: 28%;
+	margin-top: 5%;
+}
+
+form .bAgregar{
+	
+	text-decoration: none;
+	color: #211C85;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 7px;
+	background: black;
+	width: 14%;
+	margin-left: 2%;
+	margin-top: 1%;
+}
+form .lNombre{
+	display: inline-block;
+	font-weight: bold;
+}
+form .lPrecio{
+	display: inline-block;
+	font-weight: bold;
+}

@@ -21,21 +21,60 @@
 				 
 				// Obtener el valor y el texto de la opción seleccionada
 				var valorSeleccionado = opcionSeleccionada.value;
+				
 				//convertimos a int las variables
 				var menuSeleccionado = parseInt(valorSeleccionado);
 				var total = parseInt(document.getElementById("costo").value);
 				total+=menuSeleccionado;
+
+				if(total==-1)
+				{
+					total=0;
+				}
+				
 				//modificamos el value del campo costo
 				document.getElementById("costo").value = total;
-				// alert("Opción seleccionada: " + textoSeleccionado + "\n Valor de la opción: " + valorSeleccionado + "\n Valor del costo: " + costo.value);
 			}
+
+			function validar()
+			{
+				var ok=true;
+
+				if(document.getElementById("mesa").value==-1)
+				{
+					ok=false;
+				}
+
+				if(document.getElementById("mozo").value==-1)
+				{
+					ok=false;
+				}
+
+				if(document.getElementById("menu").value==-1)
+				{
+					ok=false;
+				}
+
+				if(document.getElementById("costo").value<=0)
+				{
+					ok=false;
+				}
+
+				if(!ok)
+				{
+					alert("Algunos campos no son correctos. Revise el formulario por favor.");
+				}
+
+				return ok;
+			}
+
 	</script>
 </head>
 
 <body>
 	<h1>Abrir Mesa</h1>
 	<!-- Formulario a cargar -->
-	<form method="post" name="formulario" action="comanda.php">
+	<form method="post" name="formulario" action="comanda.php" onsubmit="return validar()">
 		
 		<!-- Lista de mesas -->
 		<select name="Mesa" id="mesa">
@@ -89,6 +128,6 @@
 		<input type="submit" name="comanda" value="Nueva Comanda">
 	</form>
 
-		<a class= "volver" href=\"index.php?\"> Volver al menu </a>
+	<a class= "volver" href="index.php?"> Volver al menu </a>
 </body>
 </html>

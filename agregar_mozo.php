@@ -9,7 +9,6 @@
     <body>
         <?php
            $nombre = $_POST["Nombre"];
-
            include 'connect.php';
            $sql = "INSERT INTO `mozos`
            (
@@ -22,7 +21,6 @@
                 NULL, 
                 '$nombre'
             )";
-
             $bdmotor->query($sql);
                 
             if($bdmotor->connect_errno)
@@ -32,9 +30,10 @@
             
             else 
             {
-                echo "<a href=\"index.php?\"> Volver al menu </a>";
+                echo "Se ha agregado el mozo con exito!";                
             }
         ?>
 
+        <a href="index.php?"> Volver al menu </a>
     </body>
 </html>

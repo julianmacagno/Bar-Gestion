@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans";
+}
+
+body h1{
+	display: block;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 7px;
+	background: #47447E;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 2%;
+	border: 2px solid #000;
+
+}
+
+body{
+	background: #D9335C;
+	float:centre;	
+}
+
+form{
+	width: 40%;
+	border: 2px solid #302E2F;
+	margin-left: 29%;
+	margin-top: 5%;
+	padding: 20px;
+	background-color:#47447E;
+}
+
+form .nombre{
+
+	background:#A09FAB ;
+	color:;
+	text-align: center;
+	margin-left:13%;
+	width: 46%;
+	padding: 7px;
+	border:none;
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+
+form .boton{
+	display: block;
+	text-decoration: none;
+	color: #211C85;
+	text-align: center;
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 4px;
+	background: black;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 1%;
+}
