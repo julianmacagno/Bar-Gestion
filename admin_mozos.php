@@ -50,10 +50,10 @@
                 }
                 else 
                 {
-                    echo "Se ha eliminado el mozo con exito!";
+                    echo "<a class='lEliminar'> Se ha eliminado el mozo con exito! </a>";
                 }
             }
         ?> 
-    <a class="volver" href="index.php?"> Volver al menu </a>
+    <a href="index.php?" class="bVolver"> Volver al menu </a>
     </body>
 </html>

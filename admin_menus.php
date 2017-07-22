@@ -59,8 +59,8 @@
 
                 else 
                 {   
-                    echo "Se ha eliminado el menu con exito!";
-                    echo "<a href=\"index.php?\"> Volver al menu </a>";
+                    echo "<a class='lEliminar' > Se ha eliminado el menu con exito! </a>";
+                    echo "<a href=\"index.php?\" class='bVolver'> Volver al menu </a>";
                 }
             }
         ?>

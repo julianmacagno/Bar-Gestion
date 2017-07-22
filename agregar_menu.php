@@ -4,9 +4,10 @@
         <title>Agregar Menu</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="" rel="stylesheet">
+        <link href="agregar_menu.css" rel="stylesheet">
     </head>
     <body>
+    <h1>Administrar Menus</h1>
         <?php
             include 'connect.php';
             $nombre=$_POST["Nombre"];
@@ -34,9 +35,9 @@
 
             else 
             {
-                echo "Se ha agregado el menu con exito!";    
+                echo "<a class='lAgregar'> Se ha agregado el menu con exito! </a>";    
             }
         ?>
-        <a href="index.php?"> Volver al menu </a>
+        <a href="index.php?" class="bVolver"> Volver al menu </a>
     </body>
 </html>

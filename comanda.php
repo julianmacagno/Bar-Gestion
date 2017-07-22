@@ -6,7 +6,7 @@
 	<title> Comanda </title>
 </head>
 <body>
-
+	<h1>Comanda</h1>
 	<?php
 		include "connect.php";
 
@@ -63,8 +63,8 @@
 				die("Error de SQL consulta 3: ".$bdmotor->connect_errno);
 			}
 
-			echo "La mesa se ha abierto con exito!";
-			echo "<a href=\"index.php?\"> Volver al menu </a>";
+			echo "<a class='lAbrir'> La mesa se ha abierto con exito! </a>";
+			echo "<a href=\"index.php?\" class='bVolver'> Volver al menu </a>";
 			//$rs->close();
 		}
 		

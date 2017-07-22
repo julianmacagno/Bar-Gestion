@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="menus.css" rel="stylesheet" type="text/css">
+	<link href="menuss.css" rel="stylesheet" type="text/css">
 	<title>Administrar menus</title>
 </head>
 

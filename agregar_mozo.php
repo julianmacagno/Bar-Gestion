@@ -4,9 +4,10 @@
         <title>Administrar mozos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="" rel="stylesheet">
+        <link href="agregar_mozo.css" rel="stylesheet">
     </head>
     <body>
+    <h1>Administrar Mozos</h1>
         <?php
            $nombre = $_POST["Nombre"];
            include 'connect.php';
@@ -30,10 +31,10 @@
             
             else 
             {
-                echo "Se ha agregado el mozo con exito!";                
+                echo "<a class='lAgregar'> Se ha agregado el mozo con exito! </a>";                
             }
         ?>
 
-        <a href="index.php?"> Volver al menu </a>
+        <a href="index.php?" class="bVolver"> Volver al menu </a>
     </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="mesass.css" rel="stylesheet" type="text/css">
+	<link href="mesas.css" rel="stylesheet" type="text/css">
 	<title>Administrar mesas</title>
 </head>
 <body>

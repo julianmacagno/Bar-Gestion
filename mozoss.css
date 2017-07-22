@@ -72,11 +72,15 @@ table .tabla .c1, .c2, .c3, .c4{
 	font-weight: bold;
 	padding: 0.5%;
 	background: black;
-	width: 30%;
-	margin-left: 35%;
-	margin-top: 5%;
+	width: 45%;
+	margin-left: 27%;
+	margin-top: 2.5%;
 	border-radius: 50px;
 
+}
+
+.bAgregar:hover{
+background: #2B2B2E;
 }
 
 .bVolver{
@@ -88,12 +92,15 @@ table .tabla .c1, .c2, .c3, .c4{
 	font-weight: bold;
 	padding: 0.5%;
 	background: black;
-	width: 30%;
-	margin-left: 35%;
-	margin-top: 5%;
+	width: 45%;
+	margin-left: 27%;
+	margin-top: 2.5%;
 	border-radius: 50px;
 
 
+}
+.bVolver:hover{
+	background: #2B2B2E;
 }
 
 body{

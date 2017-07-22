@@ -6,19 +6,12 @@
 	font-family: "Open Sans";
 }
 
-body{
-	
-	background: #D9335C;
-	float:centre;
-	
-	
-}
 body h1{
 	display: block;
 	text-decoration: none;
 	color: black;
 	text-align: center;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: bold;
 	padding: 7px;
 	background: #47447E;
@@ -28,53 +21,88 @@ body h1{
 	border: 2px solid #000;
 
 }
-.oElegir{
-	display: block;
-	text-decoration: none;
-	color: #211C85;
-	text-align: center;
-	font-size: 14pt;
-	font-weight: bold;
-	padding: 7px;
-	background: #A09FAB;
+
+table{
 	width: 50%;
-	margin-left: 25%;
-	margin-top: 3%;
+	float: centre;
 	border: 2px solid #000;
+	border-collapse: collapse;
+	background: #A09FAB;
+	margin-left: 25%;
+	margin-top: 5%;
 
 }
 
-.bCerrar{
+table td{
+	border: 2px solid #000;
+}
+
+table .titulos-tabla{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	background: #47447E;
+
+}
+
+table .tabla .c1, .c2, .c3, .c4{
+	text-align: center;
+	font-size: 20pt;
+}
+
+.bEliminar{
 	display: block;
 	text-decoration: none;
 	color: #211C85;
 	text-align: center;
-	font-size: 14pt;
-	font-weight: bold;
-	padding: 7px;
-	background: black;
-	width: 50%;
-	margin-left: 25%;
-	margin-top: 1%;
-	border:none;
-
-
+	font-size: 15pt;
+	font-weight: bold;	
 }
 
-form .bVolver{
+.bEliminar:hover{
+	color: #4B4BE4;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.bAgregar{
 	display: block;
 	text-decoration: none;
 	color: #734BE1;
 	text-align: center;
-	font-size: 12pt;
+	font-size: 14pt;
 	font-weight: bold;
-	padding: 0.5%;
+	padding: 7px;
 	background: black;
-	width: 30%;
-	margin-left: 35%;
-	margin-top: 5%;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 1%;
 	border-radius: 50px;
+
 }
- form .bVolver:hover{
-	background: #2B2B2E;
+
+.bVolver{
+	display: block;
+	text-decoration: none;
+	color: #734BE1;
+	text-align: center;
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 7px;
+	background: black;
+	width: 49%;
+	margin-left: 25%;
+	margin-top: 1%;
+	border-radius: 50px;
+
+
 }
+
+body{
+	
+	background: #D9335C;
+	float:centre;
+	
+	
+}
+

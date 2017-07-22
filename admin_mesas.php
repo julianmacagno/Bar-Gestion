@@ -4,11 +4,11 @@
         <title>Administrar mesas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="" rel="stylesheet">
+        <link href="admin_mesas.css" rel="stylesheet">
     </head>
     
     <body>
-
+    <h1>Administrar Mesas</h1>
         <?php
             include 'connect.php';
             $id=$_GET["id"];
@@ -26,7 +26,7 @@
             if($id==-2)
             {
                 $sql = "DELETE FROM `mesas` WHERE `mesas`.`mesas_id` = $ultima_mesa";
-                $mensaje = "Se ha eliminado una mesa con exito!";
+                $mensaje = "<a class='lEliminar' > Se ha eliminado una mesa con exito! </a>";
             }        
 
             //se elige agregar una nueva mesa
@@ -48,7 +48,7 @@
                     '0'
                 )";
 
-                $mensaje = "Se ha agregado una mesa con exito!";
+                $mensaje = "<a class='lAgregar'>Se ha agregado una mesa con exito! </a>";
             }
 
             $rs = $bdmotor->query($sql);
@@ -61,7 +61,7 @@
             echo $mensaje;            
         ?>
 
-        <a href='index.php?'> Volver al menu </a>
+        <a href='index.php?' class="bVolver"> Volver al menu </a>
 
     </body>
 </html>

@@ -68,7 +68,7 @@ table .tabla .c1, .c2, .c3, .c4{
 .bAgregar{
 	display: block;
 	text-decoration: none;
-	color: #211C85;
+	color: #734BE1;
 	text-align: center;
 	font-size: 14pt;
 	font-weight: bold;
@@ -77,13 +77,14 @@ table .tabla .c1, .c2, .c3, .c4{
 	width: 49%;
 	margin-left: 25%;
 	margin-top: 1%;
+	border-radius: 50px;
 
 }
 
 .bVolver{
 	display: block;
 	text-decoration: none;
-	color: #211C85;
+	color: #734BE1;
 	text-align: center;
 	font-size: 14pt;
 	font-weight: bold;
@@ -92,6 +93,7 @@ table .tabla .c1, .c2, .c3, .c4{
 	width: 49%;
 	margin-left: 25%;
 	margin-top: 1%;
+	border-radius: 50px;
 
 
 }

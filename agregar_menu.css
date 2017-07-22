@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
 *{
 	margin: 0;
 	padding: 0;
@@ -5,12 +7,11 @@
 }
 
 body h1{
-	
 	display: block;
 	text-decoration: none;
 	color: black;
 	text-align: center;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: bold;
 	padding: 7px;
 	background: #47447E;
@@ -20,43 +21,14 @@ body h1{
 	border: 2px solid #000;
 
 }
+
 body{
 	background: #D9335C;
 	float:centre;	
 }
 
-.lAgregar{
-
-	display: block;
-	color:;
-	text-align: center;
-	margin-left:25%;
-	width: 49%;
-	padding: 1%;
-	margin-top: 8%;
-	border:none;
-	font-family: 'Open Sans';
-	font-weight: bold;
-	font-size: 13pt;
-}
-
-.lEliminar{
-
-	display: block;
-	color:;
-	text-align: center;
-	margin-left:25%;
-	width: 49%;
-	padding: 1%;
-	margin-top: 8%;
-	border:none;
-	font-family: 'Open Sans';
-	font-weight: bold;
-	font-size: 13pt;
-}
-
 .bVolver{
-display: block;
+	display: block;
 	text-decoration: none;
 	color: #734BE1;
 	text-align: center;
@@ -72,4 +44,18 @@ display: block;
 
 .bVolver:hover{
 	background: #2B2B2E;
+}
+
+.lAgregar{
+	display: block;
+	color:;
+	text-align: center;
+	margin-left:25%;
+	width: 49%;
+	padding: 1%;
+	margin-top: 8%;
+	border:none;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 13pt;
 }

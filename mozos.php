@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="mozos.css" rel="stylesheet" type="text/css">
+	<link href="mozoss.css" rel="stylesheet" type="text/css">
 	<title>Administrar mozos</title>
 </head>
 <body>

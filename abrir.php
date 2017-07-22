@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="abrir.css" rel="stylesheet" type="text/css">
+	<link href="abrirr.css" rel="stylesheet" type="text/css">
 	<title>Abrir mesa</title>
 
 	<script type="text/javascript">

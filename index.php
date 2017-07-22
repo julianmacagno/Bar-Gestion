@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href="indexx.css" rel="stylesheet" type="text/css">
 	<title> Bar Gestion </title>
 
 

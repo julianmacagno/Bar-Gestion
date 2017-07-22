@@ -6,7 +6,7 @@
 	<title> Baja </title>
 </head>
 <body>
-
+<h1>Cerrar Mesas</h1>
 	<?php
 		include "connect.php";
 		if($_POST)
@@ -30,8 +30,8 @@
 			{
 				die("Error de SQL consulta 2: ".$bdmotor->connect_errno);
 			}
-			echo "La mesa se ha cerrado con exito!";
-			echo "<a href=\"index.php?\"> Volver al menu </a>";
+			echo "<a class='lCerrar'> La mesa se ha cerrado con exito! </a>";
+			echo "<a href=\"index.php?\" class='bVolver' > Volver al menu </a>";
 			//$rs->close();
 		}
 		

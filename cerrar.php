@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link href="cerrarr.css" rel="stylesheet" type="text/css">
+	<link href="cerrarrr.css" rel="stylesheet" type="text/css">
 	<title>Cerrar mesas</title>
 
 	<script type="text/javascript">		
@@ -46,8 +46,8 @@
 			?>
 		</select>
 
-		<input type="submit" name="cerrar" value="Cerrar Mesa" class="bCerrar">
-		<a class= "volver" href="index.php?"> Volver al menu </a>
+		<input type="submit" value="Cerrar Mesa" class="bCerrar">
+		<a class="bVolver" href="index.php?"> Volver al menu </a>
 	</form>
 </body>
 </html>
